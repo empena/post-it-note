@@ -8,6 +8,23 @@ class NotesController < ApplicationController
   end
 
   def new
-    @notes = Notes.new
+    @notes = Note.new
   end
-end
+
+  def create
+    @notes = Note.new(notes_params)
+ 
+    if @note.save
+      redirect_to notes_path
+    else
+      render :new
+    end
+  end
+ 
+  private
+ 
+    def notes_params
+      params.require(:note).permit(:title, :author, :body)
+    end
+      
+    end
