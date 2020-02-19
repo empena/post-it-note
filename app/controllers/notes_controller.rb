@@ -31,7 +31,6 @@ class NotesController < ApplicationController
 
   def create
     @note = Note.new(notes_params)
- 
     if @note.save
       redirect_to notes_path
     else
@@ -44,5 +43,4 @@ class NotesController < ApplicationController
     def notes_params
       params.require(:note).permit(:title, :author, :body)
     end
-      
-    end
+  end

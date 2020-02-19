@@ -4,6 +4,6 @@ class StaticNotesController < ApplicationController
   end
 
   def about
-    @note = Note.all
+    
   end
 end
