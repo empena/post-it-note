@@ -1,24 +1,15 @@
-# README
+# Post It Note App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Includes:
 
-Things you may want to cover:
+* View Notes
 
-* Ruby version
+* Delete Notes
 
-* System dependencies
+* Update Notes
 
-* Configuration
+* Add Notes
 
-* Database creation
+* Static Home and About Page
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Navbar
